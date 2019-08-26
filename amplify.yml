@@ -6,6 +6,7 @@ backend:
         - "# Execute Amplify CLI with the helper script"
         - amplifyPush --simple
         - yum install jq -y
+        - ls
         - python3 -m pip install --upgrade pip
         - USER_BASE_PATH=$(python3 -m site --user-base)
         - export PATH=$PATH:$USER_BASE_PATH/bin
